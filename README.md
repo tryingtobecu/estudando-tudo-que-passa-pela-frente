@@ -8,6 +8,20 @@ Este repositório é uma coletânea organizada de resumos dos meus estudos diár
 
 Os arquivos estão organizados por área de estudo, cada uma com seus respectivos arquivos `.tex` (fonte) e `.pdf` (compilado). Exemplos:
 
+📁 alemao/
+├── pronomes-coloridos.tex
+├── perfekt-comentado.tex
+└── perfekt.pdf
+
+📁 matematica/
+├── integral-definida.tex
+├── proporcao-no-cotidiano.tex
+└── proporcao-no-cotidiano.pdf
+
+📁 blender/
+├── resumo-comandos.tex
+├── shape-keys-explicacao.tex
+└── shape-keys.pdf
 
 ---
 
