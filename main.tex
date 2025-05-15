@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+
+\title{Propriedades de Números Pares e Ímpares}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Definições de Paridade}
+
+\begin{itemize}
+    \item Um número inteiro \( n \) é \textbf{par} se \( \dfrac{n}{2} \in \mathbb{Z} \). Isso equivale a dizer que existe \( k \in \mathbb{Z} \) tal que \( n = 2k \).
+    \item Um número inteiro \( n \) é \textbf{ímpar} se \( \dfrac{n - 1}{2} \in \mathbb{Z} \). Isso equivale a dizer que existe \( k \in \mathbb{Z} \) tal que \( n = 2k + 1 \).
+\end{itemize}
+
+\section*{1. Se \( n \) é par, então \( n^2 \) é par}
+
+\textbf{Prova:}  
+Se \( n \) é par, então \( n = 2k \) para algum \( k \in \mathbb{Z} \).  
+Logo,
+\[
+n^2 = (2k)^2 = 4k^2 = 2(2k^2)
+\]
+Como \( 2k^2 \in \mathbb{Z} \), segue que \( \dfrac{n^2}{2} \in \mathbb{Z} \).  
+Portanto, \( n^2 \) é par.
+
+\hfill\(\blacksquare\)
+
+\section*{2. Se \( n \) é ímpar, então \( n^2 \) é ímpar}
+
+\textbf{Prova:}  
+Se \( n \) é ímpar, então \( n = 2k + 1 \) para algum \( k \in \mathbb{Z} \).  
+Logo,
+\[
+n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
+\]
+Como \( 2k^2 + 2k \in \mathbb{Z} \), \( n^2 \) tem a forma \( 2m + 1 \), logo é ímpar.
+
+\hfill\(\blacksquare\)
+
+\section*{3. Se \( n^2 \) é ímpar, então \( n \) é ímpar}
+
+\textbf{Prova por contrarrecíproca:}  
+Se \( n \) fosse par, então \( n = 2k \Rightarrow n^2 = 4k^2 = 2(2k^2) \), que é par.  
+Logo, se \( n^2 \) é ímpar, \( n \) não pode ser par, ou seja, \( n \) é ímpar.
+
+\hfill\(\blacksquare\)
+
+\section*{4. Se \( n \) é par, então \( n \) não é ímpar}
+
+\textbf{Prova por contradição:}  
+Suponha que \( n \) seja par e ímpar:  
+\[
+n = 2k \quad \text{e} \quad n = 2m + 1
+\Rightarrow 2k = 2m + 1 \Rightarrow k - m = \frac{1}{2}
+\]
+Isso contradiz o fato de que \( k, m \in \mathbb{Z} \).  
+Logo, \( n \) não pode ser par e ímpar ao mesmo tempo.
+
+\hfill\(\blacksquare\)
+
+\section*{5. Todo número inteiro é par ou ímpar, mas não ambos}
+
+\textbf{Prova:}  
+Seja \( n \in \mathbb{Z} \).  
+Se \( \dfrac{n}{2} \in \mathbb{Z} \), então \( n \) é par.  
+Se não, então \( n = 2k + 1 \) para algum \( k \in \mathbb{Z} \), ou seja, \( n \) é ímpar.
+
+Já mostramos que um número não pode ser par e ímpar ao mesmo tempo.  
+Portanto, todo número inteiro é ou par ou ímpar, e nunca os dois.
+
+\hfill\(\blacksquare\)
+
+\end{document}
