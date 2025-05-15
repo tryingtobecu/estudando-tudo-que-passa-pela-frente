@@ -18,13 +18,5 @@ Os arquivos estão organizados por área de estudo, cada uma com seus respectivo
 - Usar os materiais como base para revisão com **flashcards** e mapas mentais
 - Compartilhar conteúdos organizados com colegas, se útil
 
----
-
-## ⚙️ Como compilar os arquivos
-
-Você pode compilar qualquer arquivo `.tex` com:
-
-```bash
-pdflatex nome-do-arquivo.tex
 
 
