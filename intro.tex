@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{book}
+
+% Pacotes essenciais
+\usepackage[utf8]{inputenc}  % Suporte a caracteres UTF-8
+\usepackage[T1]{fontenc}    % Encoding correto das fontes
+\usepackage{amsmath, amssymb, amsthm} % Pacotes para matemática
+\usepackage{geometry}       % Para ajustar as margens
+\usepackage{hyperref}       % Para links e referências internas
+\usepackage{enumitem}       % Para listas personalizadas
+\usepackage{xcolor}
+\usepackage{indentfirst}  % Recuo na primeira linha de cada seção
+\setlength{\parindent}{15pt}  % Define o tamanho do recuo
+\setlength{\parskip}{5pt}  % Define o espaçamento entre parágrafos (opcional)
+
+
+% Configuração das margens
+%\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+% Pacote essencial para gráficos vetoriais
+\usepackage{tikz}
+
+% Permite setas estilizadas, como ->, stealth, etc.
+\usetikzlibrary{arrows.meta}
+
+% Permite usar símbolos matemáticos no texto
+\usepackage{amsmath, amssymb}
+
+% Opção para legenda sem número nas figuras
+\usepackage{caption}
+%\setlength{\parindent}{15pt}
+
+% Definição de ambientes para teoremas, definições e exemplos
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{corollary}{Corolário}[section]
+\newtheorem{definition}{Definição}[section]
+\newtheorem{example}{Exemplo}[section]
+\newtheorem{proposition}{Proposição}[section]
+
+% Título e informações do documento
+\title{Introduction to Electrodynamics}
+\author{Andressa Araújo}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\tableofcontents % Gera um sumário automaticamente
+	
+	\chapter{Vecor Analysis}
+	
+	\section{Vector Algebra}
+
+	\input{1.1.1 Vector Operations}
+	
+	\input{Perguntas e repostas}
+	
+\end{document}
